@@ -17,6 +17,8 @@
 		A859AA3F1D33F96600BC79BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A859AA3D1D33F96600BC79BB /* LaunchScreen.storyboard */; };
 		A859AA4A1D33F96700BC79BB /* World_WarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A859AA491D33F96700BC79BB /* World_WarTests.swift */; };
 		A859AA551D33F96700BC79BB /* World_WarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A859AA541D33F96700BC79BB /* World_WarUITests.swift */; };
+		A859AA631D33FCD400BC79BB /* Hexagon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A859AA621D33FCD400BC79BB /* Hexagon.swift */; };
+		A859AA651D34272600BC79BB /* MapGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A859AA641D34272600BC79BB /* MapGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		A859AA501D33F96700BC79BB /* World WarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "World WarUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A859AA541D33F96700BC79BB /* World_WarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = World_WarUITests.swift; sourceTree = "<group>"; };
 		A859AA561D33F96700BC79BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A859AA621D33FCD400BC79BB /* Hexagon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hexagon.swift; sourceTree = "<group>"; };
+		A859AA641D34272600BC79BB /* MapGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,8 @@
 				A859AA301D33F96600BC79BB /* GameScene.sks */,
 				A859AA321D33F96600BC79BB /* Actions.sks */,
 				A859AA341D33F96600BC79BB /* GameScene.swift */,
+				A859AA621D33FCD400BC79BB /* Hexagon.swift */,
+				A859AA641D34272600BC79BB /* MapGenerator.swift */,
 				A859AA361D33F96600BC79BB /* GameViewController.swift */,
 				A859AA381D33F96600BC79BB /* Main.storyboard */,
 				A859AA3B1D33F96600BC79BB /* Assets.xcassets */,
@@ -277,6 +283,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A859AA351D33F96600BC79BB /* GameScene.swift in Sources */,
+				A859AA651D34272600BC79BB /* MapGenerator.swift in Sources */,
+				A859AA631D33FCD400BC79BB /* Hexagon.swift in Sources */,
 				A859AA371D33F96600BC79BB /* GameViewController.swift in Sources */,
 				A859AA2F1D33F96600BC79BB /* AppDelegate.swift in Sources */,
 			);
@@ -426,6 +434,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "World War/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BlackPenSoftware.World-War";
@@ -438,6 +447,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "World War/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.BlackPenSoftware.World-War";
@@ -515,6 +525,7 @@
 				A859AA5B1D33F96700BC79BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A859AA5C1D33F96700BC79BB /* Build configuration list for PBXNativeTarget "World WarTests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +534,7 @@
 				A859AA5E1D33F96700BC79BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A859AA5F1D33F96700BC79BB /* Build configuration list for PBXNativeTarget "World WarUITests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +543,7 @@
 				A859AA611D33F96700BC79BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
